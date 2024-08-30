@@ -59,7 +59,7 @@ export class ClientsService {
       });
       this.filesService.deleteFile({
         folder: 'images',
-        fileNames: [client.originalImageName, client.compressedImageName],
+        fileNames: [client.mediumImage, client.smallImage],
       });
 
       return true;

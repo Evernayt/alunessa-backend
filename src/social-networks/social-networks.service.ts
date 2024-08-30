@@ -61,7 +61,7 @@ export class SocialNetworksService {
       });
       this.filesService.deleteFile({
         folder: 'icons',
-        fileNames: [socialNetwork.iconImageName],
+        fileNames: [socialNetwork.icon],
       });
 
       return true;

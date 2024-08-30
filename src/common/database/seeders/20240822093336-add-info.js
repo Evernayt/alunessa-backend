@@ -7,7 +7,7 @@ module.exports = {
       'info',
       [
         {
-          avatarImageName: '',
+          avatar: '',
           description: '[текст]',
           createdAt: new Date(),
           updatedAt: new Date(),

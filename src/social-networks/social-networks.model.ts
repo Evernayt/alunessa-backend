@@ -10,7 +10,7 @@ export class SocialNetwork extends Model<SocialNetwork> {
   id: number;
 
   @Column({ type: DataType.STRING, allowNull: false })
-  iconImageName: string;
+  icon: string;
 
   @Column({ type: DataType.STRING, allowNull: false })
   url: string;

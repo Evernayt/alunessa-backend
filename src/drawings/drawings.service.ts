@@ -68,7 +68,7 @@ export class DrawingsService {
       });
       this.filesService.deleteFile({
         folder: 'images',
-        fileNames: [drawing.originalImageName, drawing.compressedImageName],
+        fileNames: [drawing.mediumImage, drawing.smallImage],
       });
 
       return true;

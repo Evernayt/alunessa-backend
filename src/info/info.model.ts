@@ -10,7 +10,7 @@ export class Info extends Model<Info> {
   id: number;
 
   @Column({ type: DataType.STRING, defaultValue: '' })
-  avatarImageName: string;
+  avatar: string;
 
   @Column({ type: DataType.TEXT, defaultValue: '' })
   description: string;

@@ -16,10 +16,25 @@ export class Drawing extends Model<Drawing> {
   description: string;
 
   @Column({ type: DataType.STRING, allowNull: false })
-  originalImageName: string;
+  mediumImage: string;
 
   @Column({ type: DataType.STRING, allowNull: false })
-  compressedImageName: string;
+  smallImage: string;
+
+  @Column({ type: DataType.INTEGER, allowNull: false })
+  mediumWidth: number;
+
+  @Column({ type: DataType.INTEGER, allowNull: false })
+  mediumHeight: number;
+
+  @Column({ type: DataType.INTEGER, allowNull: false })
+  smallWidth: number;
+
+  @Column({ type: DataType.INTEGER, allowNull: false })
+  smallHeight: number;
+
+  @Column({ type: DataType.STRING, allowNull: false })
+  blurHash: string;
 
   @Column({ type: DataType.INTEGER, allowNull: false })
   orderIndex: number;
